@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Fundo_app"
+    tools:context="city360.fernandosoares.com.city360.CadastroCidadaoFinalActivity">
+
+    <Button
+        android:id="@+id/btnConfirmarCadastroId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etxtNumeroId"
+        android:layout_marginTop="12dp"
+        android:background="@color/Texto_city"
+        android:text="CONFIRMAR CADASTRO"
+        android:textColor="@color/texto_meio_tela"
+        android:textSize="18dp"
+        tools:background="@color/Texto_city" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Complemento"
+        android:textColor="@color/texto_meio_tela"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:text="Cadastral de Cidadão"
+        android:textColor="@color/texto_meio_tela"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/etxtNomeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Nome Completo *"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Texto_city"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etxtEmailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etxtNomeId"
+        android:layout_alignStart="@+id/etxtNomeId"
+        android:layout_below="@+id/etxtNomeId"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="E-Mail *"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Texto_city"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/etxtTelefoneId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etxtEmailId"
+        android:layout_alignStart="@+id/etxtEmailId"
+        android:layout_below="@+id/etxtEmailId"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Telefone *"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Texto_city"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/etxtCepId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etxtTelefoneId"
+        android:layout_alignStart="@+id/etxtTelefoneId"
+        android:layout_below="@+id/etxtTelefoneId"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="CEP *"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Texto_city"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/etxtEnderecoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etxtCepId"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="Endereço *"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Texto_city"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etxtNumeroId"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etxtEnderecoId"
+        android:layout_alignStart="@+id/etxtEnderecoId"
+        android:layout_below="@+id/etxtEnderecoId"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Número *"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Texto_city"
+        android:layout_toLeftOf="@+id/textView9"
+        android:layout_toStartOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/etxtBairroId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etxtEnderecoId"
+        android:layout_alignRight="@+id/etxtEnderecoId"
+        android:layout_alignTop="@+id/etxtNumeroId"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_toRightOf="@+id/etxtNumeroId"
+        android:ems="10"
+        android:hint="Bairro *"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Texto_city" />
+</RelativeLayout>

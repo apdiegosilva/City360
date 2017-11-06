@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Fundo_app"
+    tools:context="city360.fernandosoares.com.city360.PrincipalCidadaoActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="MENU PRINCIPAL"
+        android:textColor="@color/Texto_city"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="35dp"
+        android:background="@color/Texto_city"
+        app:srcCompat="@drawable/circulo" />
+
+    <ImageView
+        android:id="@+id/imgSolicitarId"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/megafone"
+        android:layout_marginRight="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgSolicitarId"
+        android:layout_alignStart="@+id/imgSolicitarId"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="17dp"
+        android:text="Relatar"
+        android:textColor="@color/texto_meio_tela"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:background="@color/Texto_city"
+        app:srcCompat="@drawable/circulo" />
+
+    <ImageView
+        android:id="@+id/imgAnalisadosId"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/imageView7"
+        android:layout_alignRight="@+id/imageView7"
+        android:layout_alignTop="@+id/imgSolicitarId"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        app:srcCompat="@drawable/like" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgAnalisadosId"
+        android:layout_alignStart="@+id/imgAnalisadosId"
+        android:layout_alignTop="@+id/textView11"
+        android:text="Soluções"
+        android:textColor="@color/texto_meio_tela"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="59dp"
+        android:background="@color/Texto_city"
+        app:srcCompat="@drawable/circulo" />
+
+    <ImageView
+        android:id="@+id/imgPendentesId"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/meusrelatos"
+        android:layout_marginBottom="7dp"
+        android:layout_above="@+id/textView20"
+        android:layout_alignLeft="@+id/imgSolicitarId"
+        android:layout_alignStart="@+id/imgSolicitarId" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView9"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="23dp"
+        android:text="Relatos Pendentes"
+        android:textColor="@color/texto_meio_tela"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignLeft="@+id/imageView7"
+        android:layout_alignStart="@+id/imageView7"
+        android:layout_alignTop="@+id/imageView9"
+        android:background="@color/Texto_city"
+        app:srcCompat="@drawable/circulo" />
+
+    <ImageView
+        android:id="@+id/imgInformacoesId"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/textView19"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_alignTop="@+id/imgPendentesId"
+        app:srcCompat="@drawable/informacoes" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView20"
+        android:layout_alignBottom="@+id/textView20"
+        android:layout_alignEnd="@+id/imageView11"
+        android:layout_alignRight="@+id/imageView11"
+        android:text="Informações"
+        android:textColor="@color/texto_meio_tela"
+        android:textSize="15sp" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="350dp"
+        android:layout_height="5dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/Texto_city"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+</RelativeLayout>

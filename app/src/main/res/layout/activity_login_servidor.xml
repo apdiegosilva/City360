@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Fundo_app"
+    tools:context="city360.fernandosoares.com.city360.LoginCidadaoActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:text="@string/Título_servidor"
+        android:textColor="@color/texto_meio_tela"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <EditText
+        android:id="@+id/extCpfId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:hint="Digite aqui seu CPF"
+        android:inputType="number"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@color/Texto_city"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/etxtSenhaId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@color/Texto_city"
+        android:layout_below="@+id/extCpfId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnAcessoServidorId"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@+id/txtEsqueciSenhaId"
+        android:layout_alignLeft="@+id/etxtSenhaId"
+        android:layout_alignRight="@+id/txtEsqueciSenhaId"
+        android:layout_alignStart="@+id/etxtSenhaId"
+        android:layout_below="@+id/txtEsqueciSenhaId"
+        android:layout_marginTop="43dp"
+        android:background="@color/Texto_city"
+        android:text="Acessar"
+        android:textColor="@color/texto_meio_tela"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/txtEsqueciSenhaId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etxtSenhaId"
+        android:layout_alignRight="@+id/etxtSenhaId"
+        android:layout_below="@+id/etxtSenhaId"
+        android:layout_marginTop="14dp"
+        android:text="@string/REcuperar_senha"
+        android:textColor="@color/texto_meio_tela" />
+
+</RelativeLayout>
