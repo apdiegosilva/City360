@@ -54,4 +54,13 @@
         <item>Revisão da Pasta Funcional</item>
         <item>Vale-transporte</item>
     </string-array>
+    <string-array name="Motivos">
+        <item></item>
+        <item>Elogio</item>
+        <item>Sugestão</item>
+        <item>Solicitação</item>
+        <item>Reclamação</item>
+        <item>Denúncia</item>
+    </string-array>
+
 </resources>

@@ -1,11 +1,13 @@
 package city360.fernandosoares.com.city360;
 
 import android.content.Intent;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -14,12 +16,15 @@ import android.widget.Toast;
 public class RelatarActivity extends AppCompatActivity {
 
     private Button btnEnviarRelato;
+    private Button btnLimpar;
+    private EditText txtMensagem;
     private ImageView imgElogio;
     private ImageView imgSolicitacao;
     private ImageView imgDenuncia;
     private ImageView imgReclamacao;
     private ImageView imgSugestao;
     private TextView txtMotivo;
+    private ImageView imgCamera;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,54 +32,37 @@ public class RelatarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_relatar);
 
         btnEnviarRelato = (Button) findViewById(R.id.btnEnviarSolicitacaoId);
-        imgElogio = (ImageView) findViewById(R.id.imgElogioId);
-        imgSolicitacao = (ImageView) findViewById(R.id.imgSolicitacaoId);
-        imgDenuncia = (ImageView) findViewById(R.id.imgDenunciaId);
-        imgReclamacao = (ImageView) findViewById(R.id.imgReclamacaoId);
-        imgSugestao = (ImageView) findViewById(R.id.imgSugestaoId);
-        txtMotivo = (TextView) findViewById(R.id.txtMotivoId);
+        final Spinner spSetores = (Spinner) findViewById(R.id.spnSetores);
+        Spinner spMotivos = (Spinner) findViewById(R.id.spnMotivos);
+        btnLimpar = (Button) findViewById(R.id.btnLimparId);
+        txtMensagem = (EditText) findViewById(R.id.txtMensagemId);
+        imgCamera = (ImageView) findViewById(R.id.imgCameraId);
 
-        final Spinner spSetores = (Spinner) findViewById(R.id.spinnerId);
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(this,
+        imgCamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivity(intent);
+            }
+        });
+
+        btnLimpar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                txtMensagem.setText("");
+                Toast.makeText(RelatarActivity.this, "LIMPO !", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        ArrayAdapter setores = ArrayAdapter.createFromResource(this,
                 R.array.Setores, android.R.layout.simple_spinner_item);
-        spSetores.setAdapter(adapter);
+        spSetores.setAdapter(setores);
         String texto = spSetores.getSelectedItem().toString();
         int a = spSetores.getSelectedItemPosition();
 
-        imgElogio.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                txtMotivo.setText("Elogio");
-            }
-        });
-
-        imgSugestao.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                txtMotivo.setText("Sugestão");
-            }
-        });
-
-        imgSolicitacao.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                txtMotivo.setText("Solicitação");
-            }
-        });
-
-        imgDenuncia.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                txtMotivo.setText("Denúncia");
-            }
-        });
-
-        imgReclamacao.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                txtMotivo.setText("Reclamação");
-            }
-        });
+        ArrayAdapter motivos = ArrayAdapter.createFromResource(this,
+                R.array.Motivos, android.R.layout.simple_spinner_item);
+        spMotivos.setAdapter(motivos);
 
         btnEnviarRelato.setOnClickListener(new View.OnClickListener() {
             @Override
