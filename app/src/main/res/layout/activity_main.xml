@@ -4,14 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Fundo_app"
+    android:background="@color/colorPrimaryDark"
     tools:context="city360.fernandosoares.com.city360.MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnCidadoId"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/btnServidorId"
+        android:layout_alignParentStart="true"
+        android:background="@color/Verde"
+        android:drawableLeft="@drawable/login"
+        android:text="Cidadão"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnServidorId"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="44dp"
+        android:background="@color/Laranja"
+        android:drawableLeft="@drawable/login"
+        android:text="@string/Título_servidor"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="Button" />
+        android:layout_marginLeft="124dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="35dp"
+        android:text="City"
+        android:textColor="@color/Verde"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView30"
+        android:layout_alignBottom="@+id/textView30"
+        android:layout_toEndOf="@+id/textView30"
+        android:layout_toRightOf="@+id/textView30"
+        android:text="360"
+        android:textColor="@color/Laranja"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
 </RelativeLayout>

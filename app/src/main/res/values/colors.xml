@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#128b2e</color>
-    <color name="colorPrimaryDark">#128b2e</color>
+    <color name="colorPrimaryDark">#ffffff</color>
     <color name="colorAccent">#FF4081</color>
     <color name="Fundo_app">#ffffff</color>
     <color name="Texto_city">#000000</color>
     <color name="texto_meio_tela">#000000</color>
+    <color name="Verde">#128b2e</color>
+    <color name="Laranja">#ea9000</color>
+
 </resources>

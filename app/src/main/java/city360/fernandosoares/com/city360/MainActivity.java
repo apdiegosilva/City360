@@ -10,15 +10,15 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageView btnCidadao;
-    private ImageView btnServidor;
+    private Button btnCidadao;
+    private Button btnServidor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnCidadao = (ImageView) findViewById(R.id.imgCidadaoId);
-        btnServidor = (ImageView) findViewById(R.id.imgServidorId);
+        btnCidadao = (Button) findViewById(R.id.btnCidadoId);
+        btnServidor = (Button) findViewById(R.id.btnServidorId);
 
         btnCidadao.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,12 +27,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnServidor.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, LoginServidorActivity.class));
+       btnServidor.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               startActivity(new Intent(MainActivity.this, LoginServidorActivity.class));
             }
-        });
+       });
 
     }
     @Override
