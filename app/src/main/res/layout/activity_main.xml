@@ -7,48 +7,11 @@
     android:background="@color/Fundo_app"
     tools:context="city360.fernandosoares.com.city360.MainActivity">
 
-    <ImageView
-        android:id="@+id/imgCidadaoId"
-        android:layout_width="340dp"
-        android:layout_height="100dp"
-        android:layout_below="@+id/textView30"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="57dp"
-        app:srcCompat="@drawable/logincidadao" />
-
-    <ImageView
-        android:id="@+id/imgServidorId"
-        android:layout_width="340dp"
-        android:layout_height="100dp"
-        android:layout_alignLeft="@+id/imgCidadaoId"
-        android:layout_alignStart="@+id/imgCidadaoId"
-        android:layout_below="@+id/imgCidadaoId"
-        android:layout_marginTop="83dp"
-        app:srcCompat="@drawable/loginservidor" />
-
-    <TextView
-        android:id="@+id/textView30"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="39dp"
-        android:text="City360"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="30sp" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/imgServidorId"
-        android:layout_alignLeft="@+id/imgServidorId"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/imgServidorId"
-        android:layout_alignStart="@+id/imgServidorId"
-        android:layout_marginBottom="36dp"
-        android:background="@color/colorPrimaryDark"
-        android:text="Sobre o Projeto"
-        android:textColor="@color/Fundo_app" />
-
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Button" />
 </RelativeLayout>
