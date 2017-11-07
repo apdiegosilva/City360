@@ -15,64 +15,57 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="63dp"
         android:text="@string/Título"
-        android:textColor="@color/texto_meio_tela"
+        android:textColor="@color/Verde"
         android:textSize="25sp"
         tools:layout_editor_absoluteX="162dp"
         tools:layout_editor_absoluteY="45dp" />
 
     <EditText
         android:id="@+id/extCpfId"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_marginTop="39dp"
+        android:layout_below="@+id/textView32"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
         android:ems="10"
-        android:hint="Digite aqui seu CPF"
         android:inputType="number"
-        android:textColor="@color/Texto_city"
         android:textColorHint="@color/Texto_city"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:textColorLink="@color/Verde" />
 
     <EditText
         android:id="@+id/etxtSenhaId"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/extCpfId"
-        android:layout_alignStart="@+id/extCpfId"
-        android:layout_below="@+id/txtCriarContaId"
-        android:layout_marginTop="26dp"
+        android:layout_alignEnd="@+id/txtEsqueciSenhaId"
+        android:layout_alignRight="@+id/txtEsqueciSenhaId"
+        android:layout_below="@+id/textView33"
         android:ems="10"
-        android:hint="Senha"
         android:inputType="textPassword"
         android:textColor="@color/Texto_city"
         android:textColorHint="@color/Texto_city"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:textColorLink="@color/Verde" />
 
     <Button
         android:id="@+id/btnAcessoCidadaoId"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_alignEnd="@+id/txtEsqueciSenhaId"
-        android:layout_alignLeft="@+id/etxtSenhaId"
         android:layout_alignRight="@+id/txtEsqueciSenhaId"
-        android:layout_alignStart="@+id/etxtSenhaId"
         android:layout_below="@+id/txtEsqueciSenhaId"
-        android:layout_marginTop="39dp"
-        android:background="@color/Texto_city"
+        android:layout_marginTop="36dp"
+        android:background="@color/Verde"
+        android:drawableLeft="@drawable/entrar"
+        android:paddingLeft="40dp"
         android:text="Acessar"
-        android:textColor="@color/texto_meio_tela"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18dp" />
 
     <TextView
         android:id="@+id/txtCriarContaId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/etxtSenhaId"
-        android:layout_alignRight="@+id/etxtSenhaId"
+        android:layout_alignEnd="@+id/extCpfId"
+        android:layout_alignRight="@+id/extCpfId"
         android:layout_below="@+id/extCpfId"
         android:layout_marginTop="12dp"
         android:text="@string/Conta"
@@ -82,11 +75,33 @@
         android:id="@+id/txtEsqueciSenhaId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/etxtSenhaId"
-        android:layout_alignRight="@+id/etxtSenhaId"
+        android:layout_alignEnd="@+id/txtCriarContaId"
+        android:layout_alignRight="@+id/txtCriarContaId"
         android:layout_below="@+id/etxtSenhaId"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="9dp"
         android:text="@string/REcuperar_senha"
-        android:textColor="@color/texto_meio_tela" />
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/extCpfId"
+        android:layout_alignStart="@+id/extCpfId"
+        android:layout_below="@+id/textView"
+        android:text="CPF:"
+        android:textColor="@color/Verde"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etxtSenhaId"
+        android:layout_alignStart="@+id/etxtSenhaId"
+        android:layout_below="@+id/txtCriarContaId"
+        android:text="Senha:"
+        android:textColor="@color/Verde"
+        android:textStyle="bold" />
 
 </RelativeLayout>

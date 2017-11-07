@@ -2,11 +2,12 @@
 <resources>
     <color name="colorPrimary">#128b2e</color>
     <color name="colorPrimaryDark">#ffffff</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#000000</color>
     <color name="Fundo_app">#ffffff</color>
     <color name="Texto_city">#000000</color>
     <color name="texto_meio_tela">#000000</color>
     <color name="Verde">#128b2e</color>
     <color name="Laranja">#ea9000</color>
+    <color name="Vermelho">#f72424</color>
 
 </resources>
