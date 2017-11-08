@@ -1,7 +1,9 @@
 package city360.fernandosoares.com.city360;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.provider.MediaStore;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,6 +28,7 @@ public class RelatarActivity extends AppCompatActivity {
     private ImageView imgSugestao;
     private TextView txtMotivo;
     private ImageView imgCamera;
+    private Switch swtAnonimo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,10 +37,11 @@ public class RelatarActivity extends AppCompatActivity {
 
         btnEnviarRelato = (Button) findViewById(R.id.btnEnviarSolicitacaoId);
         final Spinner spSetores = (Spinner) findViewById(R.id.spnSetores);
-        Spinner spMotivos = (Spinner) findViewById(R.id.spnMotivos);
+        final Spinner spMotivos = (Spinner) findViewById(R.id.spnMotivos);
         btnLimpar = (Button) findViewById(R.id.btnLimparId);
         txtMensagem = (EditText) findViewById(R.id.txtMensagemId);
         imgCamera = (ImageView) findViewById(R.id.imgCameraId);
+        swtAnonimo = (Switch) findViewById(R.id.swtAnonimo);
 
         imgCamera.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,22 +59,54 @@ public class RelatarActivity extends AppCompatActivity {
             }
         });
 
-        ArrayAdapter setores = ArrayAdapter.createFromResource(this,
-                R.array.Setores, android.R.layout.simple_spinner_item);
+        final ArrayAdapter setores = ArrayAdapter.createFromResource(this,R.array.Setores, android.R.layout.simple_spinner_item);
         spSetores.setAdapter(setores);
-        String texto = spSetores.getSelectedItem().toString();
-        int a = spSetores.getSelectedItemPosition();
 
-        ArrayAdapter motivos = ArrayAdapter.createFromResource(this,
-                R.array.Motivos, android.R.layout.simple_spinner_item);
+        ArrayAdapter motivos = ArrayAdapter.createFromResource(this,R.array.Motivos, android.R.layout.simple_spinner_item);
         spMotivos.setAdapter(motivos);
 
         btnEnviarRelato.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(RelatarActivity.this, "Relato enviado com Sucesso!",
-                        Toast.LENGTH_LONG).show();
-                startActivity(new Intent(RelatarActivity.this, PrincipalCidadaoActivity.class));
+                String anonimo = "";
+                if(swtAnonimo.isChecked()){
+                    anonimo = "SIM";
+                }
+                else{
+                    anonimo = "NÃO";
+                }
+                String mensagem = txtMensagem.getText().toString();
+                String setor = spSetores.getSelectedItem().toString();
+                String motivo = spMotivos.getSelectedItem().toString();
+                if(setor.equals("") || motivo.equals("") || mensagem.equals("")){
+                    Toast.makeText(RelatarActivity.this, "Favor inserir todos os dados !", Toast.LENGTH_SHORT).show();
+                }else{
+                    AlertDialog.Builder dialog;
+                    dialog = new AlertDialog.Builder(RelatarActivity.this);
+                    dialog.setTitle("Confirmar os dados ? ");
+                    dialog.setMessage("Motivo : "+motivo+ "\n" +
+                            "Setor : "+setor+"\n"+
+                    "Mensagem : "+mensagem+"\n"+
+                    "Anônimo: "+anonimo);
+                    dialog.setCancelable(false);
+                    dialog.setIcon(android.R.drawable.ic_dialog_info);
+                    dialog.setNegativeButton("Não", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                        }
+                    });
+                    dialog.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            startActivity(new Intent(RelatarActivity.this, PrincipalCidadaoActivity.class));
+                            Toast.makeText(RelatarActivity.this, "Relato enviado com Sucesso! Obrigado !", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    dialog.create();
+                    dialog.show();
+                }
+
+
             }
         });
     }

@@ -8,8 +8,6 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
-
 public class LoginCidadaoActivity extends AppCompatActivity {
 
     private Button btnAcessar;
@@ -28,7 +26,7 @@ public class LoginCidadaoActivity extends AppCompatActivity {
         CriarConta = (TextView) findViewById(R.id.txtCriarContaId);
         EsqueciSenha = (TextView) findViewById(R.id.txtEsqueciSenhaId);
         cpf = (TextView) findViewById(R.id.extCpfId);
-        senha = (TextView) findViewById(R.id.etxtSenhaId); 
+        senha = (TextView) findViewById(R.id.txtSenhaId);
 
         btnAcessar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,7 +34,7 @@ public class LoginCidadaoActivity extends AppCompatActivity {
                 String senhaDigitada = senha.getText().toString().trim();
                 String cpfDigitado = cpf.getText().toString().trim();
                 if (senhaDigitada.equals("") || cpfDigitado.equals("")){
-                    Toast.makeText(LoginCidadaoActivity.this, "DIGITE TODOS OS DADOS ANTES DE PROSSEGUIR", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginCidadaoActivity.this, "Digite todos os dados antes de prosseguir !", Toast.LENGTH_SHORT).show();
                 }else{
                     startActivity(new Intent(LoginCidadaoActivity.this, PrincipalCidadaoActivity.class));
                 }

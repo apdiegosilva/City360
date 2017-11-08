@@ -8,36 +8,21 @@
     tools:context="city360.fernandosoares.com.city360.SolucoesActivity">
 
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
+    <ListView
+        android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="530dp"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="@color/Verde"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme" />
+        android:layout_alignParentStart="true" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/toolbar"
+        android:layout_above="@+id/listView"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
         android:text="SOLUÇÕES"
-        android:textColor="@color/Texto_city"
-        android:textColorHighlight="@android:color/background_light"
-        android:textSize="25sp" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="29dp"
-        app:srcCompat="@drawable/solucoesimagem1" />
-
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/Verde" />
 </RelativeLayout>

@@ -37,7 +37,7 @@
         android:textColorHint="@color/Laranja" />
 
     <EditText
-        android:id="@+id/etxtSenhaId"
+        android:id="@+id/txtSenhaId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -57,9 +57,9 @@
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:layout_alignEnd="@+id/txtEsqueciSenhaId"
-        android:layout_alignLeft="@+id/etxtSenhaId"
+        android:layout_alignLeft="@+id/txtSenhaId"
         android:layout_alignRight="@+id/txtEsqueciSenhaId"
-        android:layout_alignStart="@+id/etxtSenhaId"
+        android:layout_alignStart="@+id/txtSenhaId"
         android:layout_below="@+id/txtEsqueciSenhaId"
         android:layout_marginTop="43dp"
         android:background="@color/Laranja"
@@ -71,9 +71,9 @@
         android:id="@+id/txtEsqueciSenhaId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/etxtSenhaId"
-        android:layout_alignRight="@+id/etxtSenhaId"
-        android:layout_below="@+id/etxtSenhaId"
+        android:layout_alignEnd="@+id/txtSenhaId"
+        android:layout_alignRight="@+id/txtSenhaId"
+        android:layout_below="@+id/txtSenhaId"
         android:layout_marginTop="14dp"
         android:text="@string/REcuperar_senha"
         android:textColor="@color/texto_meio_tela" />

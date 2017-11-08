@@ -99,7 +99,7 @@
         android:inputType="textMultiLine" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/swtAnonimo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/txtMensagemId"
@@ -115,6 +115,7 @@
         android:layout_alignStart="@+id/txtMensagemId"
         android:layout_below="@+id/txtMensagemId"
         android:background="@color/Verde"
+        android:drawableLeft="@drawable/delete"
         android:text="limpar texto"
         android:textColor="@color/Fundo_app"
         android:textSize="10sp" />
@@ -123,8 +124,8 @@
         android:id="@+id/imgCameraId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/switch1"
-        android:layout_alignStart="@+id/switch1"
+        android:layout_alignLeft="@+id/swtAnonimo"
+        android:layout_alignStart="@+id/swtAnonimo"
         android:layout_below="@+id/btnLimparId"
         android:layout_marginTop="12dp"
         app:srcCompat="@drawable/camera" />

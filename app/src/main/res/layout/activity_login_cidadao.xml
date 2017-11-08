@@ -28,12 +28,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="text"
         android:textColorHint="@color/Texto_city"
         android:textColorLink="@color/Verde" />
 
     <EditText
-        android:id="@+id/etxtSenhaId"
+        android:id="@+id/txtSenhaId"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/txtEsqueciSenhaId"
@@ -77,7 +77,7 @@
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/txtCriarContaId"
         android:layout_alignRight="@+id/txtCriarContaId"
-        android:layout_below="@+id/etxtSenhaId"
+        android:layout_below="@+id/txtSenhaId"
         android:layout_marginTop="9dp"
         android:text="@string/REcuperar_senha"
         android:textColor="@android:color/background_dark" />
@@ -89,7 +89,7 @@
         android:layout_alignLeft="@+id/extCpfId"
         android:layout_alignStart="@+id/extCpfId"
         android:layout_below="@+id/textView"
-        android:text="CPF:"
+        android:text="Email:"
         android:textColor="@color/Verde"
         android:textStyle="bold" />
 
@@ -97,8 +97,8 @@
         android:id="@+id/textView33"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/etxtSenhaId"
-        android:layout_alignStart="@+id/etxtSenhaId"
+        android:layout_alignLeft="@+id/txtSenhaId"
+        android:layout_alignStart="@+id/txtSenhaId"
         android:layout_below="@+id/txtCriarContaId"
         android:text="Senha:"
         android:textColor="@color/Verde"

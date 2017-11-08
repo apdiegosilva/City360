@@ -19,7 +19,7 @@
 
     <Button
         android:id="@+id/imgSolicitarId"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true"
@@ -32,7 +32,7 @@
 
     <Button
         android:id="@+id/imgAnalisadosId"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/imgSolicitarId"
         android:layout_alignStart="@+id/imgSolicitarId"
@@ -45,7 +45,7 @@
 
     <Button
         android:id="@+id/imgPendentesId"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/imgAnalisadosId"
         android:layout_alignStart="@+id/imgAnalisadosId"
@@ -58,7 +58,7 @@
 
     <Button
         android:id="@+id/imgInformacoesId"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/imgPendentesId"
         android:layout_alignStart="@+id/imgPendentesId"

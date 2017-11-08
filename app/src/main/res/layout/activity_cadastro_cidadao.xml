@@ -30,7 +30,7 @@
         android:textSize="25sp" />
 
     <EditText
-        android:id="@+id/etxtCpfId"
+        android:id="@+id/txtCpfId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -40,37 +40,34 @@
         android:layout_below="@+id/textView6"
         android:layout_marginTop="46dp"
         android:ems="10"
-        android:hint="CPF"
         android:inputType="number"
         android:textColorHint="@color/Verde" />
 
     <EditText
-        android:id="@+id/etxtSenhaId"
+        android:id="@+id/txtSenhaId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/etxtCpfId"
+        android:layout_alignLeft="@+id/txtCpfId"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignStart="@+id/etxtCpfId"
-        android:layout_below="@+id/etxtCpfId"
+        android:layout_alignStart="@+id/txtCpfId"
+        android:layout_below="@+id/txtCpfId"
         android:layout_marginTop="48dp"
         android:ems="10"
-        android:hint="Senha"
         android:inputType="textPassword"
         android:textColorHint="@color/Verde" />
 
     <EditText
-        android:id="@+id/etxtConfirmarSenhaId"
+        android:id="@+id/txtConfirmarSenhaId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/etxtSenhaId"
+        android:layout_alignLeft="@+id/txtSenhaId"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignStart="@+id/etxtSenhaId"
-        android:layout_below="@+id/etxtSenhaId"
+        android:layout_alignStart="@+id/txtSenhaId"
+        android:layout_below="@+id/txtSenhaId"
         android:layout_marginTop="42dp"
         android:ems="10"
-        android:hint="Confirmar Senha"
         android:inputType="textPassword"
         android:textColorHint="@color/Verde" />
 
@@ -78,15 +75,51 @@
         android:id="@+id/btnCadastrarId"
         android:layout_width="150dp"
         android:layout_height="60dp"
-        android:layout_alignEnd="@+id/etxtConfirmarSenhaId"
-        android:layout_alignLeft="@+id/etxtConfirmarSenhaId"
-        android:layout_alignRight="@+id/etxtConfirmarSenhaId"
-        android:layout_alignStart="@+id/etxtConfirmarSenhaId"
-        android:layout_below="@+id/etxtConfirmarSenhaId"
+        android:layout_alignEnd="@+id/txtConfirmarSenhaId"
+        android:layout_alignLeft="@+id/txtConfirmarSenhaId"
+        android:layout_alignRight="@+id/txtConfirmarSenhaId"
+        android:layout_alignStart="@+id/txtConfirmarSenhaId"
+        android:layout_below="@+id/txtConfirmarSenhaId"
         android:layout_marginTop="44dp"
         android:background="@color/Verde"
-        android:text="CADASTRAR"
-        android:textColor="@color/texto_meio_tela"
+        android:drawableLeft="@drawable/salvar"
+        android:text="continuar cadastro"
+        android:textColor="@color/Fundo_app"
         android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="27dp"
+        android:text="CPF:"
+        android:textColor="@color/Verde" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtCpfId"
+        android:layout_marginTop="29dp"
+        android:text="Senha:"
+        android:textColor="@color/Verde"
+        tools:text="Senha:" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtSenhaId"
+        android:layout_marginTop="27dp"
+        android:text="Confirmar senha:"
+        android:textColor="@color/Verde"
+        tools:text="Confirmar senha:" />
 
 </RelativeLayout>
