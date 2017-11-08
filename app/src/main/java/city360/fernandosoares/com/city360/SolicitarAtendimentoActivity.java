@@ -1,11 +1,13 @@
 package city360.fernandosoares.com.city360;
 
 import android.content.Intent;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -13,6 +15,7 @@ public class SolicitarAtendimentoActivity extends AppCompatActivity {
 
 
     private Button btnEnviarSolicitacao;
+    private ImageView imgCamera;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +23,15 @@ public class SolicitarAtendimentoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_solicitar_atendimento);
 
         btnEnviarSolicitacao = (Button) findViewById(R.id.btnEnviarSolicitacaoId);
+        imgCamera = (ImageView) findViewById(R.id.imgCameraId);
 
+        imgCamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivity(intent);
+            }
+        });
         btnEnviarSolicitacao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

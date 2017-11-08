@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Relatar problema"
+        android:text="O que você tem para nos contar?"
         android:textColor="@color/Verde"
         android:textSize="20sp" />
 
@@ -28,7 +28,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="9dp"
-        android:text="Motivo da reclamação:"
+        android:text="Motivo do Relato:"
         android:textColor="@color/Texto_city" />
 
     <Spinner
@@ -56,9 +56,11 @@
         android:id="@+id/spnSetores"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/spnMotivos"
-        android:layout_alignRight="@+id/spnMotivos"
-        android:layout_alignTop="@+id/textView10" />
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp" />
 
     <TextView
         android:id="@+id/textView12"

@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:text="MENU PRINCIPAL"
-        android:textColor="@color/Texto_city"
+        android:textColor="@color/Laranja"
         android:textSize="25sp" />
 
     <ImageView
@@ -28,7 +28,7 @@
         android:layout_marginLeft="54dp"
         android:layout_marginStart="54dp"
         android:layout_marginTop="35dp"
-        android:background="@color/Texto_city"
+        android:background="@color/Laranja"
         app:srcCompat="@drawable/circulo" />
 
     <ImageView
@@ -64,7 +64,7 @@
         android:layout_alignTop="@+id/imageView2"
         android:layout_marginEnd="57dp"
         android:layout_marginRight="57dp"
-        android:background="@color/Texto_city"
+        android:background="@color/Laranja"
         app:srcCompat="@drawable/circulo" />
 
     <ImageView
@@ -99,8 +99,8 @@
         android:layout_alignStart="@+id/imageView2"
         android:layout_below="@+id/textView11"
         android:layout_marginTop="59dp"
-        android:background="@color/Texto_city"
-        android:backgroundTint="@color/Texto_city"
+        android:background="@color/Laranja"
+        android:backgroundTint="@color/Laranja"
         app:srcCompat="@drawable/circulo" />
 
     <ImageView
@@ -120,11 +120,11 @@
         android:layout_alignLeft="@+id/imageView7"
         android:layout_alignStart="@+id/imageView7"
         android:layout_alignTop="@+id/imageView9"
-        android:background="@color/Texto_city"
+        android:background="@color/Laranja"
         app:srcCompat="@drawable/circulo" />
 
     <ImageView
-        android:id="@+id/imgInformacoesId"
+        android:id="@+id/imgContraChequeId"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_alignLeft="@+id/imgAnalisadosId"
@@ -153,7 +153,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@android:color/background_light"
-        android:backgroundTint="@color/Texto_city"
+        android:backgroundTint="@color/Laranja"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme" />
 

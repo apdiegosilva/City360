@@ -8,24 +8,34 @@
     tools:context="city360.fernandosoares.com.city360.InformacoesActivity">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar4"
+        android:id="@+id/toolbar7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:background="@color/Texto_city"
+        android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme" />
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/toolbar4"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
-        android:text="INFORMAÇÕES"
-        android:textColor="@color/texto_meio_tela"
-        android:textSize="25sp" />
+        android:layout_marginTop="17dp"
+        android:text="INFORMAÇÔES"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar7"
+        app:srcCompat="@drawable/informacoes2" />
+
 </RelativeLayout>

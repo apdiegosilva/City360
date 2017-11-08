@@ -13,6 +13,7 @@ public class PrincipalServidorActivity extends AppCompatActivity {
     private ImageView imgSolicitar;
     private ImageView imgSolicitacoes;
     private ImageView imgAnalisados;
+    private ImageView imgContraCheque;
 
 
 
@@ -23,6 +24,14 @@ public class PrincipalServidorActivity extends AppCompatActivity {
         imgSolicitar = (ImageView) findViewById(R.id.imgSolicitarId);
         imgSolicitacoes = (ImageView) findViewById(R.id.imgPendentesId);
         imgAnalisados = (ImageView) findViewById(R.id.imgAnalisadosId);
+        imgContraCheque = (ImageView) findViewById(R.id.imgContraChequeId);
+
+        imgContraCheque.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
         imgAnalisados.setOnClickListener(new View.OnClickListener() {
             @Override

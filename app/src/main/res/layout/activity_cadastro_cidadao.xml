@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
         android:text="Preencha os campos"
-        android:textColor="@color/texto_meio_tela"
+        android:textColor="@color/Verde"
         android:textSize="25sp" />
 
     <TextView
@@ -26,53 +26,53 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="13dp"
         android:text="abaixo e crie sua conta"
-        android:textColor="@color/texto_meio_tela"
+        android:textColor="@color/Verde"
         android:textSize="25sp" />
 
     <EditText
         android:id="@+id/etxtCpfId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
         android:layout_marginTop="46dp"
         android:ems="10"
         android:hint="CPF"
         android:inputType="number"
-        android:textColorHint="@color/Texto_city"
-        android:layout_below="@+id/textView6"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:textColorHint="@color/Verde" />
 
     <EditText
         android:id="@+id/etxtSenhaId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/etxtCpfId"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_alignStart="@+id/etxtCpfId"
         android:layout_below="@+id/etxtCpfId"
         android:layout_marginTop="48dp"
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
-        android:textColorHint="@color/Texto_city"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:textColorHint="@color/Verde" />
 
     <EditText
         android:id="@+id/etxtConfirmarSenhaId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/etxtSenhaId"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_alignStart="@+id/etxtSenhaId"
         android:layout_below="@+id/etxtSenhaId"
         android:layout_marginTop="42dp"
         android:ems="10"
         android:hint="Confirmar Senha"
         android:inputType="textPassword"
-        android:textColorHint="@color/Texto_city"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:textColorHint="@color/Verde" />
 
     <Button
         android:id="@+id/btnCadastrarId"
@@ -84,7 +84,7 @@
         android:layout_alignStart="@+id/etxtConfirmarSenhaId"
         android:layout_below="@+id/etxtConfirmarSenhaId"
         android:layout_marginTop="44dp"
-        android:background="@color/Texto_city"
+        android:background="@color/Verde"
         android:text="CADASTRAR"
         android:textColor="@color/texto_meio_tela"
         android:textSize="18dp" />

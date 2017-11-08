@@ -25,21 +25,17 @@
     <string-array name="Setores">
         <item></item>
         <item>Ação Social</item>
-        <item>Administração</item>
-        <item>Cadastro</item>
-        <item>Comunicação</item>
-        <item>Controladoria</item>
         <item>Cultura e Turismo</item>
         <item>Desenvolvimento Rural</item>
         <item>Educação</item>
         <item>Esporte</item>
-        <item>Infraestrutura e Obras</item>
+        <item>Infraestrutura / Obras</item>
         <item>Meio Ambiente</item>
-        <item>Procuradoria</item>
-        <item>Recuros Humanos</item>
+        <item>Ouvidoria</item>
         <item>Saúde</item>
         <item>Trânsito e Transporte</item>
-        <item>Urbanização</item>
+
+
     </string-array>
 
     <string-array name="TipoSolicitacao">

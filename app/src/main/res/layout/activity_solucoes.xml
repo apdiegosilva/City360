@@ -15,7 +15,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:background="@color/Texto_city"
+        android:background="@color/Verde"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme" />
 
@@ -25,10 +25,19 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/toolbar"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="10dp"
         android:text="SOLUÇÕES"
-        android:textColor="@color/texto_meio_tela"
+        android:textColor="@color/Texto_city"
         android:textColorHighlight="@android:color/background_light"
         android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        app:srcCompat="@drawable/solucoesimagem1" />
 
 </RelativeLayout>
