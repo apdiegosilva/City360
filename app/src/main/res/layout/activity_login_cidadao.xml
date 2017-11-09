@@ -21,7 +21,7 @@
         tools:layout_editor_absoluteY="45dp" />
 
     <EditText
-        android:id="@+id/extCpfId"
+        android:id="@+id/txtCPF"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView32"
@@ -64,9 +64,9 @@
         android:id="@+id/txtCriarContaId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/extCpfId"
-        android:layout_alignRight="@+id/extCpfId"
-        android:layout_below="@+id/extCpfId"
+        android:layout_alignEnd="@+id/txtCPF"
+        android:layout_alignRight="@+id/txtCPF"
+        android:layout_below="@+id/txtCPF"
         android:layout_marginTop="12dp"
         android:text="@string/Conta"
         android:textColor="@color/texto_meio_tela" />
@@ -86,8 +86,8 @@
         android:id="@+id/textView32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/extCpfId"
-        android:layout_alignStart="@+id/extCpfId"
+        android:layout_alignLeft="@+id/txtCPF"
+        android:layout_alignStart="@+id/txtCPF"
         android:layout_below="@+id/textView"
         android:text="Email:"
         android:textColor="@color/Verde"

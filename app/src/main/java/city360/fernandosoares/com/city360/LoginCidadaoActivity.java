@@ -25,7 +25,7 @@ public class LoginCidadaoActivity extends AppCompatActivity {
         btnAcessar = (Button) findViewById(R.id.btnAcessoCidadaoId);
         CriarConta = (TextView) findViewById(R.id.txtCriarContaId);
         EsqueciSenha = (TextView) findViewById(R.id.txtEsqueciSenhaId);
-        cpf = (TextView) findViewById(R.id.extCpfId);
+        cpf = (TextView) findViewById(R.id.txtCPF);
         senha = (TextView) findViewById(R.id.txtSenhaId);
 
         btnAcessar.setOnClickListener(new View.OnClickListener() {
