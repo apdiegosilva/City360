@@ -19,6 +19,7 @@ public class EsqueciSenhaActivity extends AppCompatActivity {
     private RadioButton rbtServidor;
     private TextView txtEmail;
     private RadioGroup rdgPerfil;
+    private String perfil = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +35,22 @@ public class EsqueciSenhaActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String email = txtEmail.getText().toString().trim();
-                Integer perfil = rdgPerfil.getCheckedRadioButtonId();
+
+
+                rdgPerfil.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                        switch (checkedId){
+                            case R.id.rbtCidadaoId:
+                                perfil = "Cidadão";
+                            break;
+                            case R.id.rbtServidorId:
+                                perfil = "Servidor";
+                            break;
+                        }
+                    }
+                });
                 if(email.equals("")){
                     Toast.makeText(EsqueciSenhaActivity.this, "Insira todos os dados antes de prosseguir!", Toast.LENGTH_SHORT).show();
                 }else{
