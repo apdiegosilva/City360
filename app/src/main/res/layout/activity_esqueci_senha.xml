@@ -5,21 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Fundo_app"
+    android:padding="8dp"
     tools:context="city360.fernandosoares.com.city360.EsqueciSenhaActivity">
 
     <Button
         android:id="@+id/btnEnviarId"
         android:layout_width="340dp"
         android:layout_height="50dp"
-        android:layout_alignEnd="@+id/editText"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignRight="@+id/editText"
-        android:layout_alignStart="@+id/editText"
-        android:layout_below="@+id/editText"
+        android:layout_alignEnd="@+id/txtEmail"
+        android:layout_alignLeft="@+id/txtEmail"
+        android:layout_alignRight="@+id/txtEmail"
+        android:layout_alignStart="@+id/txtEmail"
+        android:layout_below="@+id/txtEmail"
         android:layout_marginTop="38dp"
-        android:background="@android:color/darker_gray"
+        android:background="@color/Azul"
+        android:drawableLeft="@drawable/entrar"
         android:text="Enviar"
-        android:textColor="@color/texto_meio_tela"
+        android:textColor="@color/Fundo_app"
         android:textSize="18dp" />
 
     <TextView
@@ -29,7 +31,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="42dp"
-        android:text="Selecione o seu perfil"
+        android:text="Selecione o seu perfil:"
         android:textColor="@color/Texto_city"
         android:textSize="25sp"
         tools:layout_editor_absoluteX="139dp"
@@ -49,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="     Cidadão"
-            android:textColor="@color/Verde"
+            android:textColor="@color/colorAccent"
             android:textSize="20sp" />
 
         <RadioButton
@@ -58,23 +60,31 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="     Servidor"
-            android:textColor="@color/Laranja"
+            android:textColor="@color/colorAccent"
             android:textSize="20sp" />
     </RadioGroup>
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="340dp"
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/radioGrupoId"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="72dp"
         android:ems="10"
-        android:hint="E-Mail "
         android:inputType="textPersonName"
         android:textColorHint="@color/Azul" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnEnviarId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp"
+        android:text="Digite o e-mail cadastrado:"
+        android:textColor="@color/colorAccent" />
 
 </RelativeLayout>
