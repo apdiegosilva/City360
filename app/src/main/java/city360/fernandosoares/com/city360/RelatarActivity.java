@@ -27,7 +27,7 @@ public class RelatarActivity extends AppCompatActivity {
     private ImageView imgReclamacao;
     private ImageView imgSugestao;
     private TextView txtMotivo;
-    private ImageView imgCamera;
+    private Button btnCamera;
     private Switch swtAnonimo;
 
     @Override
@@ -40,10 +40,10 @@ public class RelatarActivity extends AppCompatActivity {
         final Spinner spMotivos = (Spinner) findViewById(R.id.spnMotivos);
         btnLimpar = (Button) findViewById(R.id.btnLimparId);
         txtMensagem = (EditText) findViewById(R.id.txtMensagemId);
-        imgCamera = (ImageView) findViewById(R.id.imgCameraId);
+        btnCamera = (Button) findViewById(R.id.btnCameraId);
         swtAnonimo = (Switch) findViewById(R.id.swtAnonimo);
 
-        imgCamera.setOnClickListener(new View.OnClickListener() {
+        btnCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);

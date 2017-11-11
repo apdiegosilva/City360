@@ -1,19 +1,18 @@
 package city360.fernandosoares.com.city360;
 
 import android.content.Intent;
-import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.Button;
 
 public class PrincipalServidorActivity extends AppCompatActivity {
 
 
-    private ImageView imgSolicitar;
-    private ImageView imgSolicitacoes;
-    private ImageView imgAnalisados;
-    private ImageView imgContraCheque;
+    private Button btnSolicitar;
+    private Button btnSolicitacoes;
+    private Button btnAnalisados;
+    private Button btnContraCheque;
 
 
 
@@ -21,31 +20,31 @@ public class PrincipalServidorActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal_servidor);
-        imgSolicitar = (ImageView) findViewById(R.id.imgSolicitarId);
-        imgSolicitacoes = (ImageView) findViewById(R.id.imgPendentesId);
-        imgAnalisados = (ImageView) findViewById(R.id.imgAnalisadosId);
-        imgContraCheque = (ImageView) findViewById(R.id.imgContraChequeId);
+        btnSolicitar = (Button) findViewById(R.id.btnEnviarSolicitacaoId);
+        btnSolicitacoes = (Button) findViewById(R.id.btnPendentesId);
+        btnAnalisados = (Button) findViewById(R.id.btnAnalisadosId);
+        btnContraCheque = (Button) findViewById(R.id.btnContraChequeId);
 
-        imgContraCheque.setOnClickListener(new View.OnClickListener() {
+        btnContraCheque.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
             }
         });
 
-        imgAnalisados.setOnClickListener(new View.OnClickListener() {
+        btnAnalisados.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(PrincipalServidorActivity.this, SolicitacoesAnalisadasActivity.class));
             }
         });
-        imgSolicitacoes.setOnClickListener(new View.OnClickListener() {
+        btnSolicitacoes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(PrincipalServidorActivity.this, MinhasSolicitacoesActivity.class));
             }
         });
-        imgSolicitar.setOnClickListener(new View.OnClickListener() {
+        btnSolicitar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(PrincipalServidorActivity.this, SolicitarAtendimentoActivity.class));

@@ -29,7 +29,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="9dp"
         android:text="Motivo do Relato:"
-        android:textColor="@color/Texto_city" />
+        android:textColor="@color/Verde" />
 
     <Spinner
         android:id="@+id/spnMotivos"
@@ -50,7 +50,7 @@
         android:layout_below="@+id/spnMotivos"
         android:layout_marginTop="15dp"
         android:text="Setor:"
-        android:textColor="@color/Texto_city" />
+        android:textColor="@color/Verde" />
 
     <Spinner
         android:id="@+id/spnSetores"
@@ -71,17 +71,19 @@
         android:layout_below="@+id/spnSetores"
         android:layout_marginTop="10dp"
         android:text="Mensagem:"
-        android:textColor="@color/Texto_city"
+        android:textColor="@color/Verde"
         android:textColorLink="@color/Texto_city" />
 
     <Button
         android:id="@+id/btnEnviarSolicitacaoId"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnAnexoId"
+        android:layout_alignLeft="@+id/btnAnexoId"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="12dp"
+        android:layout_alignRight="@+id/btnAnexoId"
+        android:layout_alignStart="@+id/btnAnexoId"
+        android:layout_marginBottom="17dp"
         android:background="@color/Verde"
         android:drawableLeft="@drawable/salvar"
         android:text="enviar solicitação"
@@ -105,7 +107,8 @@
         android:layout_alignEnd="@+id/txtMensagemId"
         android:layout_alignRight="@+id/txtMensagemId"
         android:layout_below="@+id/txtMensagemId"
-        android:text="Anônimo:" />
+        android:text="Anônimo:"
+        android:textColor="@color/Verde" />
 
     <Button
         android:id="@+id/btnLimparId"
@@ -120,23 +123,34 @@
         android:textColor="@color/Fundo_app"
         android:textSize="10sp" />
 
-    <ImageView
-        android:id="@+id/imgCameraId"
+    <Button
+        android:id="@+id/btnCameraId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/swtAnonimo"
-        android:layout_alignStart="@+id/swtAnonimo"
+        android:layout_alignEnd="@+id/swtAnonimo"
+        android:layout_alignLeft="@+id/btnLimparId"
+        android:layout_alignRight="@+id/swtAnonimo"
+        android:layout_alignStart="@+id/btnLimparId"
         android:layout_below="@+id/btnLimparId"
-        android:layout_marginTop="12dp"
-        app:srcCompat="@drawable/camera" />
+        android:layout_marginTop="9dp"
+        android:background="@color/Verde"
+        android:drawableLeft="@drawable/camera"
+        android:text="Câmera"
+        android:textColor="@color/Fundo_app" />
 
-    <ImageView
-        android:id="@+id/imageView4"
+    <Button
+        android:id="@+id/btnAnexoId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/btnLimparId"
-        android:layout_alignRight="@+id/btnLimparId"
-        android:layout_alignTop="@+id/imgCameraId"
-        app:srcCompat="@drawable/clip" />
+        android:layout_alignEnd="@+id/btnCameraId"
+        android:layout_alignLeft="@+id/btnCameraId"
+        android:layout_alignRight="@+id/btnCameraId"
+        android:layout_alignStart="@+id/btnCameraId"
+        android:layout_below="@+id/btnCameraId"
+        android:layout_marginTop="7dp"
+        android:background="@color/Verde"
+        android:drawableLeft="@drawable/anexo"
+        android:text="Anexar Arquivo"
+        android:textColor="@color/Fundo_app" />
 
 </RelativeLayout>
