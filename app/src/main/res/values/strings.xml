@@ -34,8 +34,6 @@
         <item>Ouvidoria</item>
         <item>Saúde</item>
         <item>Trânsito e Transporte</item>
-
-
     </string-array>
 
     <string-array name="TipoSolicitacao">
@@ -50,6 +48,7 @@
         <item>Revisão da Pasta Funcional</item>
         <item>Vale-transporte</item>
     </string-array>
+
     <string-array name="Motivos">
         <item></item>
         <item>Elogio</item>
@@ -57,6 +56,12 @@
         <item>Solicitação</item>
         <item>Reclamação</item>
         <item>Denúncia</item>
+    </string-array>
+    <string-array name="SolicitacoesServidor">
+        <item>Requisição Férias Prêmio</item>
+        <item>Contagem de Tempo</item>
+        <item>Adiantamento de 13° salário</item>
+        <item>Transporte</item>
     </string-array>
 
 </resources>

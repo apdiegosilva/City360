@@ -76,34 +76,34 @@ public class RelatarActivity extends AppCompatActivity {
                     anonimo = "NÃO";
                 }
                 String mensagem = txtMensagem.getText().toString();
-                String setor = spSetores.getSelectedItem().toString();
-                String motivo = spMotivos.getSelectedItem().toString();
-                if(setor.equals("") || motivo.equals("") || mensagem.equals("")){
-                    Toast.makeText(RelatarActivity.this, "Favor inserir todos os dados !", Toast.LENGTH_SHORT).show();
-                }else{
-                    AlertDialog.Builder dialog;
-                    dialog = new AlertDialog.Builder(RelatarActivity.this);
-                    dialog.setTitle("Confirmar os dados ? ");
-                    dialog.setMessage("Motivo : "+motivo+ "\n" +
-                            "Setor : "+setor+"\n"+
-                    "Mensagem : "+mensagem+"\n"+
-                    "Anônimo: "+anonimo);
-                    dialog.setCancelable(false);
-                    dialog.setIcon(android.R.drawable.ic_dialog_info);
-                    dialog.setNegativeButton("Não", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                        }
-                    });
-                    dialog.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            startActivity(new Intent(RelatarActivity.this, PrincipalCidadaoActivity.class));
-                            Toast.makeText(RelatarActivity.this, "Relato enviado com Sucesso! Obrigado !", Toast.LENGTH_SHORT).show();
-                        }
-                    });
-                    dialog.create();
-                    dialog.show();
+                    String setor = spSetores.getSelectedItem().toString();
+                    String motivo = spMotivos.getSelectedItem().toString();
+                    if(setor.equals("") || motivo.equals("") || mensagem.equals("")){
+                        Toast.makeText(RelatarActivity.this, "Favor inserir todos os dados !", Toast.LENGTH_SHORT).show();
+                    }else{
+                        AlertDialog.Builder dialog;
+                        dialog = new AlertDialog.Builder(RelatarActivity.this);
+                        dialog.setTitle("Confirmar os dados ? ");
+                        dialog.setMessage("Motivo : "+motivo+ "\n" +
+                                "Setor : "+setor+"\n"+
+                                "Mensagem : "+mensagem+"\n"+
+                                "Anônimo: "+anonimo);
+                        dialog.setCancelable(false);
+                        dialog.setIcon(android.R.drawable.ic_dialog_info);
+                        dialog.setNegativeButton("Não", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                            }
+                        });
+                        dialog.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                startActivity(new Intent(RelatarActivity.this, PrincipalCidadaoActivity.class));
+                                Toast.makeText(RelatarActivity.this, "Relato enviado com Sucesso! Obrigado !", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                        dialog.create();
+                        dialog.show();
                 }
 
 

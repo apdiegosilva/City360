@@ -1,6 +1,7 @@
 package city360.fernandosoares.com.city360;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -48,6 +49,16 @@ public class PrincipalServidorActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(PrincipalServidorActivity.this, SolicitarAtendimentoActivity.class));
+            }
+        });
+        btnContraCheque.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("http://www.bomdespacho.mg.gov.br/wp-login.php?redirect_to=http%3A%2F%2Fwww.bomdespacho.mg.gov.br%2Fcc%2F&reauth=1"));
+                startActivity(intent);
             }
         });
 
