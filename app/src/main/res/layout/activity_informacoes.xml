@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Fundo_app"
+    android:visibility="visible"
     tools:context="city360.fernandosoares.com.city360.InformacoesActivity">
 
     <android.support.v7.widget.Toolbar
